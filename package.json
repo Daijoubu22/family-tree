@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dagrejs/dagre": "^1.0.4",
     "@nextui-org/react": "^2.1.13",
     "@reduxjs/toolkit": "^1.9.6",
+    "dagre": "^0.8.5",
     "framer-motion": "^10.16.4",
     "immer": "^10.0.2",
     "react": "^18.2.0",

@@ -28,5 +28,7 @@ module.exports = {
     'import/extensions': 'off',
     'no-param-reassign': 'off',
     'import/no-unresolved': 'off',
+    // using @typescript-eslint/no-unused-vars instead
+    'no-unused-vars': 'off',
   },
 }
