@@ -1,3 +1,4 @@
+import './styles/reset.css';
 import './styles/index.css';
 import { NextUIProvider } from '@nextui-org/react';
 import { ReactFlowProvider } from 'reactflow';
