@@ -1,5 +1,6 @@
 import { Handle, Position } from 'reactflow';
-import { Card, CardBody } from '@nextui-org/react';
+import { Card } from 'antd';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   MARRIAGE_NODE_HEIGHT,
   MARRIAGE_NODE_WIDTH,
@@ -14,10 +15,19 @@ function MarriageNode() {
       }}
     >
       <Handle type="target" position={Position.Top} isConnectable={false} />
-      <Card className="w-full h-full">
-        <CardBody className="flex justify-center items-center">
-          <span className="text-sm m-0">L</span>
-        </CardBody>
+      <Card
+        className="w-full h-full shadow-lg"
+        size="small"
+        bodyStyle={{ height: '100%' }}
+      >
+        <div className="flex h-full justify-center items-center">
+          <FontAwesomeIcon
+            color="#fc4f83"
+            icon="heart"
+            beatFade
+            className="w-5 h-5"
+          />
+        </div>
       </Card>
       <Handle type="source" position={Position.Bottom} isConnectable={false} />
     </div>

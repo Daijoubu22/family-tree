@@ -56,6 +56,8 @@ export const parseFamilyTree = (persons: Person[], relations: Relation[]) => {
         edges.push(getEdge(parent.id, relation.person1));
         relationsCopy[relationsCopy.indexOf(relation)] = undefined;
       }
+    } else if (relation.type === 'parent') {
+      edges.push(getEdge(relation.person1, relation.person2));
     }
   });
 

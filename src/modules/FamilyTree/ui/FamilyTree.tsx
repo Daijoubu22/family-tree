@@ -21,7 +21,7 @@ import {
   PERSON_NODE_WIDTH,
 } from '@/modules/FamilyTree/constants/dimensions';
 import { useFamilyTreeStore } from '@/modules/FamilyTree/store/familyTreeStore';
-import AddRelationModal from '@/modules/FamilyTree/ui/AddRelationModal';
+import AddPersonModal from '@/modules/FamilyTree/ui/AddPersonModal.tsx';
 
 const g = new Dagre.graphlib.Graph().setDefaultEdgeLabel(() => ({}));
 
@@ -88,7 +88,7 @@ function FamilyTree() {
   return (
     persons.length && (
       <>
-        <AddRelationModal />
+        <AddPersonModal />
         <div
           style={{
             width: '1900px',

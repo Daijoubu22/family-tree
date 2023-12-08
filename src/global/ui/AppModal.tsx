@@ -26,7 +26,7 @@ function AppModal({
   negativeText = 'Отмена',
 }: Props) {
   return (
-    <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+    <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="4xl">
       <ModalContent>
         {(onClose) => (
           <>
